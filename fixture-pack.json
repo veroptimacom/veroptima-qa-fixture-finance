@@ -1,0 +1,40 @@
+{
+  "name": "@qa-expert/qa-fixture-finance",
+  "version": "0.1.0",
+  "family": "fixture-pack",
+  "domain": "finance",
+  "contractVersion": "0.1.0",
+  "entry": "./src/index.ts",
+  "locales": [],
+  "kinds": [
+    {
+      "name": "credit-card",
+      "outputs": "string",
+      "params": {
+        "brand": "\"visa\" | \"mastercard\" | \"amex\" | \"discover\" | \"any\" (default: any)"
+      }
+    },
+    {
+      "name": "iban",
+      "outputs": "string",
+      "params": {
+        "country": "ISO-3166-alpha2; one of DE|GB|FR|ES|IT|NL|BE|PT|CH|BR. Unsupported country throws."
+      }
+    },
+    {
+      "name": "swift-bic",
+      "outputs": "string",
+      "params": {
+        "length": "8 | 11 (default: 8)"
+      }
+    },
+    {
+      "name": "routing-number",
+      "outputs": "string"
+    },
+    {
+      "name": "isbn-13",
+      "outputs": "string"
+    }
+  ]
+}
